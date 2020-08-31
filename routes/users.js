@@ -8,20 +8,7 @@ const nodemailer = require("nodemailer");
 
 const router = express.Router();
 
-const JWT_SECRET = "7f78dd07-8d35-4fb6-8c85-e0b89581ee4f";
-
-/*
-router.get("/", async (req, res) => {
-    try {
-        let results = await db.allUsers();
-        res.status(200).json(results);
-    }
-    catch (err) {
-        console.log(err);
-        res.sendStatus(500);
-    }
-});
-*/
+const JWT_SECRET = process.env.jwt_secret;
 
 router.put("/changeinfo", async (req, res) => {
     try {
@@ -224,8 +211,8 @@ router.post("/register", async (req, res) => {
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             auth: {
-                user: "bymplayer213@gmail.com", // generated ethereal user
-                pass: "134679258134679258"
+                user: process.env.email_user, // generated ethereal user
+                pass: process.env.email_password
             },
         });
 

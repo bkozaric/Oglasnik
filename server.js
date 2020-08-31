@@ -7,10 +7,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+require('dotenv');
 
 app.use(session({
     name: "SESSION_ID",
-    secret: 'g4356g46534g65hdfrhet',
+    secret: process.env.session_secret,
     resave: true,
     saveUninitialized: true
 }));
@@ -23,9 +24,9 @@ app.use("/api/orders", require("./routes/order"));
 
 const PORT = process.env.PORT || 5000;
 
-if(process.env.NODE_ENV === "production"){
+if (process.env.NODE_ENV === "production") {
     app.use(express.static('client/build'));
-    app.get('*', (req,res) => {
+    app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
     })
 }

@@ -1,11 +1,13 @@
 const mysql = require("mysql");
 
+require('dotenv');
+
 const pool = mysql.createPool({
     connectionLimit: 10,
-    user: "ba1c78fa80326f",
-    password: "b1d88883",
-    database: "heroku_db214a6261fe895",
-    host: "us-cdbr-east-02.cleardb.com",
+    user: process.env.db_user,
+    password: process.env.db_password,
+    database: process.env.db_name,
+    host: process.env.db_host,
     port: "3306"
 });
 
@@ -25,23 +27,6 @@ db.getCategories = () => {
             })
     })
 }
-
-/*
-SELECT
-       COUNT(itemId) AS amount,
-       o.id AS "key",
-       a.id,
-       a.title,
-       a.price,
-       o.userId,
-       a.addedBy,
-       (SELECT imageUrl FROM images WHERE images.itemId = a.id LIMIT 1) AS image
-FROM ads a
-    INNER JOIN orders o ON o.itemId = a.id
-    INNER JOIN users u ON u.id = o.userId
-WHERE u.id=61 AND o.timestamp = "1593477072275"
-GROUP BY a.id;
-*/
 
 db.cancelOrder = (uid, oid) => {
     return new Promise((resolve, reject) => {
@@ -171,10 +156,6 @@ db.cartTotal = (userId) => {
         })
     })
 }
-
-/*
-SELECT c.id AS "key", a.*, c.userId, (SELECT imageUrl FROM images WHERE images.itemId = a.id LIMIT 1) AS image FROM ads a INNER JOIN cart c ON c.itemId = a.id INNER JOIN users u ON u.id = c.userId WHERE u.id=
-*/
 
 db.allCart = (userId) => {
     return new Promise((resolve, reject) => {
