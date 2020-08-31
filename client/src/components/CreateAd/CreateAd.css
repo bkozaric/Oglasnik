@@ -1,0 +1,30 @@
+div.ad-input-row-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0px;
+    position: relative;
+}
+
+
+div.list-push-image{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 24px;
+    background-color: rgba(77, 197, 105, 0.418);
+    padding: 4px 8px;
+    border-radius: 0px 10px 10px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+div.list-push-image:hover{
+    padding: 4px 13px;
+}
+
+p.image-list-item{
+    margin-left: 25px;
+}

@@ -1,0 +1,220 @@
+div.tab-picker {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    min-width: 800px;
+    max-width: 1200px;
+}
+
+div.tab-picker>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    flex: 1;
+    text-align: center;
+    height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.1s ease-in-out;
+}
+
+div.tab-picker>div:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(238, 238, 238) 100%);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+div.picked-tab {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(238, 238, 238) 100%);
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.highlight-tab {
+    font-weight: 700;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(228, 228, 228) 100%);
+}
+
+div.picked-tab h2 {
+    color: rgb(24, 24, 24);
+}
+
+div.profile-ads-view-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.profile-ads-view-buttons * {
+    margin: 0;
+    width: 50px;
+    color: white;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+div.profile-ads-view-buttons button:hover {
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.43);
+}
+
+button.profile-delete-ad-button {
+    background-color: rgba(251, 106, 106, 0.6);
+    border-radius: 0px 0px 10px 10px;
+}
+
+button.profile-edit-ad-button {
+    background-color: rgb(77, 197, 105, 0.6);
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.profile-pick-action-buttons>button {
+    transition: all 0.2s ease-in-out;
+    margin: 0px 5px;
+    padding: 8px 15px;
+    border: 0;
+}
+
+div.profile-pick-action-buttons>button:hover {
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.43);
+
+}
+
+button.profile-pick-action-delete {
+    background-color: rgb(251, 106, 106, 0.6);
+    color: white;
+}
+
+button.profile-pick-action-change-password {
+    color: white;
+    background-color: rgba(200, 186, 58, 0.685);
+}
+
+div.profile-picked-action {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px 20px 60px;
+    border-bottom: 2px solid rgb(185, 185, 185);
+}
+
+button.submit-password-change {
+    padding: 7px 18px;
+    font-size: 1.2em;
+    background-color: rgb(22, 30, 49);
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+
+button.submit-password-change:hover {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.23);
+    transition: 0.2s ease-in-out;
+    padding: 7px 25px;
+}
+
+div.profile-picked-action>p {
+    text-align: center;
+}
+
+
+
+button.order-pick-button {
+    margin-top: 4px;
+    transition: 0.2s ease-in-out;
+    background-color: #e0e0e08f;
+    color: rgb(0, 0, 0);
+    border-radius: 15px 0px 0px 15px;
+    border-right: 0;
+}
+
+button.order-pick-button:hover {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.23);
+    transform: translateY(-3px);
+}
+
+div.order-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+}
+
+div.selected-order-preview {
+    width: 80%;
+    border-left: 2px solid rgb(165, 165, 165);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.order-tab {
+    display: flex;
+    width: 100%;
+
+}
+
+p.order-id-date {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+table.order-list-table {
+    border-top: 2px solid rgb(180, 180, 180);
+    border-bottom: 2px solid rgb(180, 180, 180);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div.cancel-order-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+button.cancel-order-button {
+    background-color: rgb(251, 106, 106);
+    cursor: pointer;
+    margin: 10px 0px 0px 0px;
+    border: 0;
+    width: fit-content;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+button.cancel-order-button:hover {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.23);
+    transition: 0.2s ease-in-out;
+}
+
+button.highlight-button {
+    background-color: rgb(232, 255, 210);
+    font-weight: 700;
+}
+
+@media (max-width: 750px) {
+    div.tab-picker {
+        flex-direction: column;
+    }
+
+    div.picked-tab {
+        min-width: 600px;
+    }
+}

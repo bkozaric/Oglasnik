@@ -1,0 +1,100 @@
+
+h1{
+    display:inline-block;
+    margin: 0px 10px;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: rgb(49, 49, 49);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.281);
+}
+div.ad{
+    display:flex;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 950px;
+    min-width: 750px;
+    margin: 5px 0px;
+    height: 230px;
+    position: relative;
+}
+
+p{
+    margin: 0px 10px;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+
+p.ad-price{
+    font-weight: 600;
+}
+
+div.price{
+    background: linear-gradient(0deg, rgb(238, 238, 238) 0%, rgba(255,255,255,1) 80%);
+    border-radius: 0px 0px 20px 0px;
+}
+div.info{
+    background-color: rgb(255, 255, 255);
+}
+div.title{
+    background: linear-gradient(180deg, rgb(238, 238, 238) 0%, rgba(255,255,255,1) 80%);
+    border-radius: 0px 20px 0px 0px ;
+}
+
+div.ad-img{
+    width:40%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    transition: all 0.18s ease-in-out;
+}
+
+div.ad-img:hover{
+    width: 55%;
+}
+
+div.ad-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.ad-row p{
+    max-height: 83px;
+    max-width: 90%;
+}
+
+div.ad-row h1{
+    max-height: 47px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+div.ad-row h1:hover{
+    color: rgb(131, 131, 131);
+    transform: skewX(-5deg);
+}
+
+div.ad-row{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+div.ad-row>*{
+    max-width: 90%;
+}
+
+div.ad-row.info{
+    flex:1.5;
+}
+
+div.ad-info{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    word-break: break-word;
+    flex-grow: 1;
+}

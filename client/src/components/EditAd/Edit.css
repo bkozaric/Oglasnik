@@ -1,0 +1,112 @@
+p.edit-successful-msg {
+    color: green;
+    font-weight: 600;
+}
+
+div.ad-form form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div.ad-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px 0;
+    border: 1px solid black;
+    width: 80%;
+    min-width: 400px;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 100%);
+}
+
+div.ad-form button {
+    transition: 0.1s ease-in-out;
+    padding: 8px 30px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 1.5em; 
+    background-color: #282936;
+}
+
+div.ad-form button:hover {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.23);
+    transition: 0.1s ease-in-out;
+    padding: 8px 35px;
+}
+.form-ad-input {
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 0px;
+    min-width: 70%;
+    font-size: 1.3em;
+}
+
+
+
+img.edit-ad-img{
+    margin-bottom: 20px;
+    width: 85%;
+    border-radius: 8px;
+}
+
+div.ad-form h2{
+    font-size: 2em;
+}
+
+div.edit-image-list{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    align-self: center;
+}
+
+div.edit-image-list img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 5px;
+}
+
+div.edit-image-list>div{
+    position: relative;
+    height: 100%;
+    
+}
+
+div.edit-image-list>div div{
+    
+    cursor: pointer;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    font-size: 14px;
+    padding: 3px 8px;
+    color: white;
+    background-color: rgb(220, 32, 32);
+    transition: all 150ms ease-in-out;
+    border-radius: 100%;
+}
+
+div.edit-image-list>div div:hover{
+    transform: scale(1.25);
+    background-color: rgb(151, 10, 10);
+}
+
+p.images-label{
+    margin: 10px 0px;
+}

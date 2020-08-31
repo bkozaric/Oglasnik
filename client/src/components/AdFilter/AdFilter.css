@@ -1,0 +1,41 @@
+input.ad-filter-input{
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0;
+    transition: all 180ms 180ms ease-in-out;
+}
+
+
+div.ad-filter-container{
+    max-width: 950px;
+    min-width: 750px;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    border-bottom: 10px;
+    border-bottom: 2px solid black;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #c8cedb 100%);
+}
+
+div.ad-filter-container div{
+    position: relative;
+}
+
+div.ad-filter-container p{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 6px;
+    transition: all 180ms 180ms ease-in-out;
+}
+
+input.ad-filter-input:focus + p{
+    
+    
+    opacity: 1;
+    
+}
+
+input.ad-filter-input:focus{
+    padding-left: 38px;
+}

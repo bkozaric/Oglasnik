@@ -1,0 +1,8 @@
+p.already-logged {
+    margin-top: 25px;
+}
+
+div.input-row-container {
+    display: flex;
+    justify-content: center;
+}

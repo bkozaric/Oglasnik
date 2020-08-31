@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5em;
+  color: white;
+  height: 120px;
+}
+
+div.main-wrap {
+  min-height: 100%;
+  margin-bottom: -120px;
+}
+
+div.main-wrap:after {
+  content: "";
+  display: block;
+  height: 120px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-footer {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: rgb(206, 206, 206);
+  box-shadow: 0px -10px 18px -7px rgba(0, 0, 0, 0.58);
+}
+
+footer {
+  clear: both;
+  height: 120px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px 0;
+  border: 1px solid black;
+  width: 50%;
+  min-width: 260px;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.form h2 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-bottom: 2px solid black;
+  padding: 0px 25px;
+}
+
+div.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+div.form button {
+  transition: 0.1s ease-in-out;
+  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  background-color: #282936;
+}
+
+div.form button:hover {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.23);
+  transition: 0.2s ease-in-out;
+  padding: 8px 25px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+div.container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  align-items: center;
+}
+
+p.error-msg {
+  margin-top: 0px;
+  color: rgb(173, 16, 16);
+  font-weight: 600;
+  text-align: center;
+}
+
+p.success-msg {
+  margin-top: 0px;
+  color: rgb(17, 102, 6);
+  font-weight: 600;
+  text-align: center;
+}
+
+div.input-row-container span {
+  margin-bottom: 5px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  background-color: rgb(236, 255, 232);
+  transition: all 300ms ease-in-out;
+}
+
+button:focus {
+  outline: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.form-input-error {
+  border: 1px solid red;
+  background-color: rgb(255, 245, 245);
+}
+
+h2.form-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: rgb(36, 36, 36);
+}
+
+@media (max-width: 1400px) {
+  div.container {
+    width: 100%;
+  }
+
+  div.cart-container {
+    min-width: 800px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  div.form {
+    width: 100%;
+  }
+
+  div.ad {
+    min-width: 450px;
+    width: 100%;
+  }
+
+  div.cart-container {
+    min-width: 500px;
+  }
+
+  div.picked-tab {
+    min-width: 450px;
+  }
+
+}
